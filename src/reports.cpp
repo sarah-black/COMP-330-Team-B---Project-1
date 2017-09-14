@@ -8,4 +8,5 @@
 #include <fstream>
 #include <windows.h>
 #include <string>
+#include "reports.h"
 using namespace std;

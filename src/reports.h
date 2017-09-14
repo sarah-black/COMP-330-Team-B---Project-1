@@ -1,0 +1,8 @@
+//
+// Created by Irinel Bandas on 9/14/17.
+//
+
+#ifndef COMP_330_TEAM_B_PROJECT_1_REPORTS_H
+#define COMP_330_TEAM_B_PROJECT_1_REPORTS_H
+
+#endif //COMP_330_TEAM_B_PROJECT_1_REPORTS_H

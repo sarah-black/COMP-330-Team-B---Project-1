@@ -4,7 +4,12 @@
 #include <iostream>
 #include <fstream>
 #include <cstring>
+#include "notes.h"
+#include "parser.h"
 
 using namespace std;
 using namespace boost;
-//Heyyyyy
+
+int main () {
+    notes();
+}

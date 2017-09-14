@@ -7,6 +7,7 @@
 #include <fstream>
 #include <windows.h>
 #include <string>
+#include "notes.h"
 using namespace std;
 
 void notes(){
