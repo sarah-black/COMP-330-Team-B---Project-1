@@ -12,24 +12,29 @@ using namespace std;
 
 void notes(){
 
-int sum = 0;
-ifstream xFile;
-int x;
 Note note = new Note;
-
-/*should put something in later that let's them search multiple files*/
-cout<<"Please enter the file path that you would like to search: "<<;
+ifstream xFile;
+cout << data << endl;
+cout << "Please enter the file path that you would like to search: " << endl;
 cin >> note;
-xFile.open(note);
-
-while(xFile >> x){
-    sum = sum + x;
+xFile.open(note, ios::in);
+vector<int> temp;
+char data[];
+xFile >> data;
+while(xFile >> data) {
+    temp.push_back(data);
 }
+for(vector<int>::iterator i = temp.begin(); i != temp.end(); i++) {
+    cout << *i << endl;
+}
+
 
 /*just in case we can't find file, this is err output*/
 if(!xFile){
     cout<<"File cannot be found."<<;
     end(1);
 }
+
+xFile.close();
 
 }
