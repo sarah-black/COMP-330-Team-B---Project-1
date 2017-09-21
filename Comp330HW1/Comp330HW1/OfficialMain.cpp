@@ -7,8 +7,11 @@
 #include <algorithm>
 #include <math.h>
 #include <windows.h>
+#include <search.h>
 
 using namespace std;
+
+string search;
 
 int main()
 {
@@ -59,8 +62,10 @@ int main()
 	*/
 
 	//FREQUENCY//
-	
-	string path = ("C:\\Users\\S.Black\\Desktop\\resources\\");
+	cout << "Please enter the path of the directory of files you would like to use: "<<endl;
+	string path;
+	cin >> path;
+
 	string txtFile = "*.txt";
 	string fullPath = path + txtFile;
 
@@ -88,6 +93,7 @@ int main()
 			char c = 179;
 			vector<int> tabs;
 			vector<string> stringi;
+			
 
 			while (getline(stream, str2)) {
 				str += str2;
@@ -157,27 +163,10 @@ int main()
 				}
 			}
 
+
 			//Mention Report - Print
 
-			ofstream outputMention;
-			ifstream inputMention;
-			string word;
-			string mention;
-			//stream.open("test.txt");
-			outputMention.open("outputMention.txt");
-			outputMention << "MentionReport:" << endl;
-			//while (!stream.eof()) {
-			//	if (word[0] == *"@" || word[0] == *"#") {
-					cout << "Found Word: " << word << endl;
-					outputMention << word << endl;
-			//	}
-			//}
-			stream.close();
-			outputMention.close();
-			inputMention.open("outputMention.txt");
-			while (inputMention >> mention) {
-				cout << mention << endl;
-			}
+
 
 			//Prints out the most freq used words in each txt file. I think this was a requirement. :)
 			cout << "|--->MOST FREQUENTLY USED WORDS<---|" << endl;
@@ -192,11 +181,32 @@ int main()
 			//These two are just to add spaces between reports.
 			cout << "" << endl;
 			cout << "" << endl;
+
+			ofstream outputMention;
+			ifstream inputMention;
+			string word;
+			string mention;
+			//stream.open("test.txt");
+			outputMention.open("outputMention.txt");
+			outputMention << "MentionReport:" << endl;
+			
+				if (word[0] == *"@" || word[0] == *"#") {
+					cout << "Found Word: " << word << endl;
+					outputMention << word << endl;
+				}
+			
+			stream.close();
+			outputMention.close();
+			inputMention.open("outputMention.txt");
+			while (inputMention >> mention) {
+				cout << mention << endl;
+			}
 		}
 		else
 		{
 			cout << "Problem opening file " << FindData.cFileName << "\n";
 		}
+
 	} while (FindNextFile(hFind, &FindData) > 0);
 
 	if (GetLastError() != ERROR_NO_MORE_FILES)
@@ -204,7 +214,6 @@ int main()
 		cout << "Something went wrong during searching\n";
 	}
 
-	system("pause");
 
 	/*cin >> token;
 	while (getline(stream, line)) {
