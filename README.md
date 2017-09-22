@@ -24,9 +24,9 @@ location or insert the location of the projects 'resource' folder. Press enter w
    -//*format and screenshots will go here*//
 
 
-##FUNCTIONS
+## FUNCTIONS
 
-###*Function Title will go here*
+### *Function Title will go here*
 
 Function description will go here, and so on.
 
