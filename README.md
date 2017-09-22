@@ -27,6 +27,11 @@ This function is used to open the searched file and write to keyword.txt and men
 
 Pub Variables:
 
+https://user-images.githubusercontent.com/18154371/30737559-b0b9942c-9f4c-11e7-8c32-ba135326ff6e.PNG
 
 
+Class list:
 
+https://user-images.githubusercontent.com/18154371/30737565-b56208d8-9f4c-11e7-8e05-b45628d0ed4f.PNG
+
+      Keyword will print out unique keywords, with Mentions printing out all mentions within a file.
