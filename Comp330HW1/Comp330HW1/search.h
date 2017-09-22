@@ -12,7 +12,7 @@
 #define _search
 
 void search()
-{
+{}
 
 
 
