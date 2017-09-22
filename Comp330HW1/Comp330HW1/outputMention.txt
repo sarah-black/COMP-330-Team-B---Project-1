@@ -1,6 +1,1 @@
 MentionReport:
-@there
-#OMG
-@look
-@realDonaldTrump
-@TestAgain

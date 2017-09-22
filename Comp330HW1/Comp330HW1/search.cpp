@@ -9,12 +9,11 @@
 #include <windows.h>
 #include "OfficialMain.h"
 #include "search.h"
-#include <cstring>
 
 using namespace std;
 
 
-void searchContent(string content) {
+/*void searchContent() {
 	smatch match;
 	regex expr("[@!*^]*");
 
@@ -43,6 +42,3 @@ void searchContent(string content) {
 	}
 }*/
 
-void searchContent()
-{
-}
