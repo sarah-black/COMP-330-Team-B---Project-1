@@ -5,26 +5,29 @@
 #include <regex>
 #include <vector>
 #include <algorithm>
-
-
+#include <math.h>
+#include <windows.h>
+#include "search.h"
 #pragma once
-#ifndef _search
-#define _search
+#ifndef _tests
+#define _tests
 
-//*Just the header, makes the main literally 3 lines.*// 
+
 class Searcher {
-	public:
-		void open();
+public:
+	void open();
 };
 
 class Keyword {
-	public:
-		void kwd();
+public:
+	void kwd();
 
 };
 
 class Mention {
-	public:
+public:
 	void mentions();
 };
-#endif
+
+
+#endif _tests

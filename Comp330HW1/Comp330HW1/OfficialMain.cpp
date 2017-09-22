@@ -13,8 +13,8 @@ using namespace std;
 int main()
 {
 	Searcher s;
-
 	s.open();
 
 	return 0;
+
 }
