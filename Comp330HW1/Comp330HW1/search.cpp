@@ -9,24 +9,26 @@
 #include <windows.h>
 #include "OfficialMain.h"
 #include "search.h"
+#include <cstring>
 
 using namespace std;
 
 
-/*void searchContent(string content) {
-smatch match;
-regex expr("[@!*^]*");
+void searchContent(string content) {
+	smatch match;
+	regex expr("[@!*^]*");
 
-while (regex_search(content, match, expr)) {
-for (auto x : match)
-cout << x << " ";
-
-cout << std::endl;
-content = match.suffix().str();
+	while (regex_search(content, match, expr)) {
+		for (auto x : match) {
+			cout << x << " ";
+		}
+	cout << std::endl;
+	content = match.suffix().str();
+}
 }
 
-}
-*/
+
+
 /*void search(ifstream stream) {
 	std::string result;
 	try {
@@ -40,3 +42,7 @@ content = match.suffix().str();
 		}
 	}
 }*/
+
+void searchContent()
+{
+}

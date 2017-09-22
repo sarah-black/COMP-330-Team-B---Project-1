@@ -11,6 +11,6 @@
 #ifndef _search
 #define _search
 
-void search();
+void searchContent();
 
 #endif

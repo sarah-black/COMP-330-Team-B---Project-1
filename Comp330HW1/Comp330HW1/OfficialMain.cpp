@@ -7,7 +7,8 @@
 #include <algorithm>
 #include <math.h>
 #include <windows.h>
-#include <search.h>
+#include "search.h"
+#include "OfficialMain.h"
 
 using namespace std;
 
@@ -21,14 +22,14 @@ int main()
 	cin >> path;
 
 	string txtFile = "*.txt";
-	string fullPath = path + txtFile;
+	string fullPath = path + txtFile; 
 
 	//Using this, we can do the whole Find First File, Next, et cetera thing!!
 	WIN32_FIND_DATA FindData;
 	HANDLE hFind;
 
 	hFind = FindFirstFile(fullPath.c_str(), &FindData);
-
+	
 	if (hFind == INVALID_HANDLE_VALUE)
 	{
 		cout << "Error searching directory\n";
