@@ -11,11 +11,19 @@
 #ifndef _search
 #define _search
 
-void search()
-{}
+class Searcher {
+	public:
+		void open();
+};
 
+class Keyword {
+	public:
+		void kwd();
 
+};
 
-
-
+class Mention {
+	public:
+	void mentions();
+};
 #endif
