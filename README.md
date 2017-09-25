@@ -10,7 +10,7 @@ the projects 'resource' folder.
 
 1) Make sure all necessary libraries are installed for basic C++ functionality, and put files you wish to search through in the project's resource folder.
 
-2) Download and open the project.
+2) Download requisite files and open the project. To do this, go into the TeamBProj1 folder and open the TeamBProj1 file.
 
 3) Go ahead and run the main function.
 
